@@ -1,0 +1,11 @@
+name: 'my_project'
+version: '1.0.0'
+
+profile: 'dbt_project'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+models:
+  my_project:
+    +materialized: view
